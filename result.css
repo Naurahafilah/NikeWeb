@@ -1,0 +1,105 @@
+/* HEADER HALAMAN RESULTS */
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    position: sticky;
+    top: 60px; /* Tepat di bawah navbar */
+    background: white;
+    z-index: 90;
+}
+
+.results-header h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-controls {
+    display: flex;
+    gap: 24px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #111;
+}
+
+.control-btn:hover {
+    color: #757575;
+}
+
+/* LAYOUT UTAMA (Sidebar & Grid) */
+.layout-container {
+    display: flex;
+    padding: 0 48px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* SIDEBAR KIRI */
+.sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    padding-right: 40px;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    height: calc(100vh - 150px);
+    position: sticky;
+    top: 150px;
+}
+
+/* Class ini dipakai oleh JS untuk menyembunyikan sidebar */
+.sidebar.hidden {
+    width: 0;
+    padding-right: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateX(-20px);
+}
+
+/* LIST KATEGORI DI SIDEBAR */
+.category-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.category-list li {
+    margin-bottom: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.category-list li:hover {
+    color: #757575;
+}
+
+/* MENU DROPDOWN DI SIDEBAR */
+.filter-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* GRID PRODUK KANAN */
+.product-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-bottom: 60px;
+    transition: all 0.3s ease;
+}

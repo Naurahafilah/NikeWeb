@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Force 1 '07 - Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <svg viewBox="0 0 24 24" width="60" height="60"><path d="M15.42 5.09c0 .88-.71 1.59-1.59 1.59-.88 0-1.59-.71-1.59-1.59 0-.88.71-1.59 1.59-1.59.88 0 1.59.71 1.59 1.59zM10.15 10.66l-1.83 1.25 1 2.57c.23.63.38 1.31.42 2.01l-1.33-2.61-2.27-.7c-.36-.11-.74-.11-1.08.06l-1.83 1.05c.16-.9.51-1.76 1.04-2.54.3-.43.83-.69 1.37-.77l3.38-.56c-.22-1.12-.22-2.26 0-3.38l-.85.2c-.44.22-.93.28-1.36.28l-.94-.14c.71-1.12 1.63-2.12 2.75-2.89l1.28 1.28c.57.57 1.41.72 2.19.36l1.83-.85c1 .63 1.83 1.48 2.53 2.46l-1.55.7c-.72.36-1.21 1.01-1.29 1.78l-.13 2.19c1.07.64 2.25 1.06 3.52 1.27l-1.14 1.7c-.77 1.13-1.78 1.98-2.97 2.47l-1.28-2.4c-.08-.78-.36-1.42-.79-1.98l-.98-2.27c-.29-.28-.58-.5-.86-.71z"/>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="new.html">New</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">NikeSKIMS</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="search.html" style="text-decoration: none; color: inherit;">
+                <div class="search-box" style="cursor: pointer;">
+                    <span class="search-icon">🔍</span>
+                    <input placeholder="Search" readonly style="cursor: pointer;">
+                </div>
+            </a>
+            <div class="nav-icons"><span>♡</span><span>🛍️</span></div>
+        </div>
+    </header>
+
+    <div class="sub-navbar">
+        <p>Shop All New Arrivals &nbsp;&nbsp; <a href="#">Shop</a></p>
+    </div>
+
+    <main class="product-layout">
+        
+        <div class="thumbnails-column">
+            <img src="assets/AIR+FORCE+1+'07.png-7.avif" class="thumb active" alt="Thumb 1">
+            <img src="assets/AIR+FORCE+1+'07.png-4.avif" class="thumb" alt="Thumb 2">
+            <img src="assets/AIR+FORCE+1+'07.png-9.avif" class="thumb" alt="Thumb 3">
+            <img src="assets/AIR+FORCE+1+'07.png-5.avif" class="thumb" alt="Thumb 4">
+            <img src="assets/AIR+FORCE+1+'07.png-3.avif" class="thumb" alt="Thumb 5">
+            <img src="assets/AIR+FORCE+1+'07.png-5.avif" class="thumb" alt="Thumb 6">
+        </div>
+
+        <div class="main-image-column">
+            <div class="badge">★ Highly Rated</div>
+            <img id="mainImage" src="assets/af1.jpeg" alt="Nike Air Force 1">
+            <div class="image-nav">
+                <button>❮</button>
+                <button>❯</button>
+            </div>
+        </div>
+
+        <div class="info-column">
+            <h1 id="prodName">Nike Air Force 1 '07</h1>
+            <h2 id="prodType">Men's Shoes</h2>
+            <p id="prodPrice" class="price">1 399 kr</p>
+
+            <div class="color-picker">
+                <img src="assets/AIR+FORCE+1+'07.png-5.avif" class="color-box active">
+                <img src="assets/AIR+FORCE+1+'07.png-5.avif" class="color-box">
+                <img src="assets/AIR+FORCE+1+'07.png-9.avif" class="color-box">
+                <img src="assets/AIR+FORCE+1+'07.png-5.avif" class="color-box">
+            </div>
+
+            <div class="size-section">
+                <div class="size-header">
+                    <h3>Select Size</h3>
+                    <a href="#">Size Guide</a>
+                </div>
+                <p class="size-note">Fits large; we recommend ordering half a size down</p>
+                
+                <div class="size-grid">
+                    <button class="size-btn">EU 38.5</button>
+                    <button class="size-btn">EU 39</button>
+                    <button class="size-btn">EU 40</button>
+                    <button class="size-btn">EU 40.5</button>
+                    <button class="size-btn">EU 41</button>
+                    <button class="size-btn">EU 42</button>
+                    <button class="size-btn">EU 42.5</button>
+                    <button class="size-btn">EU 43</button>
+                    <button class="size-btn">EU 44</button>
+                    <button class="size-btn">EU 44.5</button>
+                </div>
+                <p id="sizeError" class="size-error hidden">Please select a size.</p>
+            </div>
+
+            <button id="addBtn" class="add-to-bag-btn">Add to Bag</button>
+            <button class="favorite-btn">Favorite ♡</button>
+            
+            <p class="desc">The radiance lives on in the Nike Air Force 1 '07, the b-ball icon that puts a fresh spin on what you know best...</p>
+        </div>
+    </main>
+
+    <div id="cartModal" class="cart-modal hidden">
+        <div class="modal-header">
+            <div class="success-title">
+                <span class="check-icon">✔</span> Added to Bag
+            </div>
+            <button id="closeModalBtn" class="close-btn">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <img id="modalImg" src="assets/airmaxnike.webp" alt="Shoe">
+            <div class="modal-info">
+                <h4 id="modalName">Nike Air Force 1 '07</h4>
+                <p id="modalType">Men's Shoes</p>
+                <p>Size <span id="modalSize">EU 40</span></p>
+                <p id="modalPrice">1 399 kr</p>
+            </div>
+        </div>
+
+        <div class="modal-buttons">
+            <button class="view-bag-btn">View Bag (1)</button>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div id="modalBackdrop" class="modal-backdrop hidden"></div>
+
+    <script src="product.js"></script>
+</body>
+</html>

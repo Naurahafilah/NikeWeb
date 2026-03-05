@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Nike Clone</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+    <header class="search-header">
+        <div class="logo">
+            <a href="index.html">
+                <svg viewBox="0 0 24 24" width="60" height="60"><path d="M21.6 4.982c-2.3-1.026-6.148-1.503-9.972-.51-5.183 1.34-9.358 5.446-10.96 10.158-.292.86-.425 1.543-.4 2.054.025.5.21 1.054.66 1.157.388.086.84-.132 1.25-.417.892-.614 2.1-1.897 3.228-3.414.776-1.042 1.536-2.264 2.16-3.486-2.71 2.21-5.61 3.525-8.32 3.633 1.39-1.345 3.328-2.617 5.768-3.666 3.64-1.562 7.82-2.128 11.237-1.42 1.373.28 2.58.747 3.525 1.272.932.518 1.586 1.096 1.824 1.58.07.142.106.27.12.392V4.982z"/></svg>
+            </a>
+        </div>
+        
+        <form class="search-bar-expanded" action="javascript:void(0);">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search" autofocus autocomplete="off">
+        </form>
+
+        <div class="cancel-btn">
+            <a href="index.html">Cancel</a>
+        </div>
+    </header>
+
+    <main class="popular-terms-container">
+        <h3>Popular Search Terms</h3>
+        <div class="terms-grid">
+            <button class="term-btn">air force 1</button>
+            <button class="term-btn">football boots</button>
+            <button class="term-btn">shoes</button>
+            <button class="term-btn">air max</button>
+            <button class="term-btn">jordan</button>
+            <button class="term-btn">nike tech</button>
+            <button class="term-btn">basketball shoes</button>
+            <button class="term-btn">ja 3</button>
+        </div>
+    </main>
+
+    <div class="bg-blur">
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80" alt="Background">
+        <div class="overlay-dark"></div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

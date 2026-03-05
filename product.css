@@ -1,0 +1,121 @@
+/* SUB NAVBAR */
+.sub-navbar {
+    text-align: center; padding: 12px 0; background: #f5f5f5; 
+    font-size: 14px; font-weight: 500; color: #111;
+}
+.sub-navbar a { text-decoration: underline; font-weight: 700; }
+
+/* TATA LETAK UTAMA 3 KOLOM */
+.product-layout {
+    display: flex; padding: 40px 60px; gap: 40px; max-width: 1400px; margin: 0 auto;
+}
+
+/* 1. KOLOM THUMBNAIL (KIRI) */
+.thumbnails-column {
+    display: flex; flex-direction: column; gap: 10px; width: 80px;
+    height: 700px; overflow-y: auto;
+}
+.thumbnails-column::-webkit-scrollbar { display: none; } /* Hilangkan garis scroll */
+.thumb {
+    width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px;
+    background: #f5f5f5; mix-blend-mode: multiply; cursor: pointer; opacity: 0.6; transition: 0.2s;
+}
+.thumb:hover, .thumb.active { opacity: 1; border: 1px solid #111; }
+
+/* 2. KOLOM GAMBAR UTAMA (TENGAH) */
+.main-image-column {
+    flex: 1.5; position: relative; background: #f5f5f5; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center; overflow: hidden; height: 700px;
+}
+.main-image-column img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+.badge {
+    position: absolute; top: 20px; left: 20px; background: white; padding: 8px 16px;
+    border-radius: 20px; font-weight: 500; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.image-nav { position: absolute; bottom: 20px; right: 20px; display: flex; gap: 8px; }
+.image-nav button {
+    width: 40px; height: 40px; border-radius: 50%; border: none; background: white;
+    cursor: pointer; font-size: 18px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 3. KOLOM INFO PRODUK (KANAN) */
+.info-column { flex: 1; max-width: 400px; padding-top: 10px; }
+.info-column h1 { font-size: 28px; font-weight: 500; margin-bottom: 4px; }
+.info-column h2 { font-size: 16px; font-weight: 500; color: #111; margin-bottom: 16px; }
+.info-column .price { font-size: 20px; font-weight: 500; margin-bottom: 30px; }
+
+/* Warna & Ukuran */
+.color-picker { display: flex; gap: 8px; margin-bottom: 40px; }
+.color-box {
+    width: 70px; height: 70px; border-radius: 4px; background: #f5f5f5;
+    mix-blend-mode: multiply; cursor: pointer; border: 1px solid transparent;
+}
+.color-box.active { border-color: #111; }
+
+.size-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.size-header h3 { font-weight: 500; font-size: 16px; }
+.size-note { font-size: 15px; color: #757575; margin-bottom: 12px; }
+.size-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 30px; }
+.size-btn {
+    padding: 14px; background: white; border: 1px solid #e5e5e5; border-radius: 4px;
+    font-size: 16px; cursor: pointer; transition: 0.2s;
+}
+.size-btn:hover { border-color: #111; }
+.size-btn.active { border-color: #111; box-shadow: inset 0 0 0 1px #111; }
+.size-error { color: #d92828; font-size: 14px; font-weight: 500; margin-top: -20px; margin-bottom: 20px; }
+
+/* Tombol Add & Fav */
+.add-to-bag-btn {
+    width: 100%; background: #111; color: white; padding: 18px; border-radius: 30px;
+    border: none; font-size: 16px; font-weight: 500; cursor: pointer; margin-bottom: 12px;
+}
+.add-to-bag-btn:hover { background: #333; }
+.favorite-btn {
+    width: 100%; background: white; color: #111; padding: 18px; border-radius: 30px;
+    border: 1px solid #e5e5e5; font-size: 16px; font-weight: 500; cursor: pointer; margin-bottom: 40px;
+}
+.desc { font-size: 16px; line-height: 1.6; color: #111; }
+
+/* ==============================================
+   POP-UP ADDED TO BAG (Sesuai Screenshot 8)
+============================================== */
+.hidden { display: none !important; }
+
+.modal-backdrop {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3); z-index: 999;
+}
+
+.cart-modal {
+    position: fixed; top: 80px; right: 40px; width: 360px;
+    background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 1000; padding: 24px; animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.success-title { font-weight: 500; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+.check-icon {
+    background: #118c4f; color: white; width: 20px; height: 20px;
+    border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 12px;
+}
+.close-btn { background: none; border: none; font-size: 24px; cursor: pointer; }
+
+.modal-body { display: flex; gap: 16px; margin-bottom: 24px; }
+.modal-body img { width: 80px; height: 80px; object-fit: cover; background: #f5f5f5; border-radius: 8px; mix-blend-mode: multiply; }
+.modal-info h4 { font-weight: 500; font-size: 15px; margin-bottom: 4px; }
+.modal-info p { color: #757575; font-size: 15px; margin-bottom: 4px; }
+#modalPrice { color: #111; font-weight: 500; margin-top: 8px; }
+
+.modal-buttons { display: flex; flex-direction: column; gap: 12px; }
+.view-bag-btn {
+    padding: 16px; border-radius: 30px; background: white; color: #111;
+    border: 1px solid #d4d4d4; font-weight: 500; font-size: 16px; cursor: pointer;
+}
+.view-bag-btn:hover { border-color: #111; }
+.checkout-btn {
+    padding: 16px; border-radius: 30px; background: #111; color: white;
+    border: none; font-weight: 500; font-size: 16px; cursor: pointer;
+}
+.checkout-btn:hover { background: #333; }

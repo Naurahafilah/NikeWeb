@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag - Nike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <header class="navbar checkout-nav">
+        <div class="logo">
+            <a href="index.html">
+                <svg viewBox="0 0 24 24" width="60" height="60"><path d="M21.6 4.982c-2.3-1.026-6.148-1.503-9.972-.51-5.183 1.34-9.358 5.446-10.96 10.158-.292.86-.425 1.543-.4 2.054.025.5.21 1.054.66 1.157.388.086.84-.132 1.25-.417.892-.614 2.1-1.897 3.228-3.414.776-1.042 1.536-2.264 2.16-3.486-2.71 2.21-5.61 3.525-8.32 3.633 1.39-1.345 3.328-2.617 5.768-3.666 3.64-1.562 7.82-2.128 11.237-1.42 1.373.28 2.58.747 3.525 1.272.932.518 1.586 1.096 1.824 1.58.07.142.106.27.12.392V4.982z"/></svg>
+            </a>
+        </div>
+        <div class="secure-checkout">
+            <span>🔒 Secure Checkout</span>
+        </div>
+    </header>
+
+    <main class="bag-layout">
+        
+        <div class="bag-items-section">
+            <div class="free-shipping-banner">
+                <h3>Free Delivery</h3>
+                <p>Applies to orders of 2 000 kr or more. <a href="#">View details</a></p>
+            </div>
+
+            <h1>Bag</h1>
+
+            <div class="cart-item" id="cartItem">
+                <div class="item-img">
+                    <img id="checkImg" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Shoe">
+                </div>
+                
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 id="checkName">Nike Air Force 1 '07</h3>
+                        <p id="checkPrice" class="item-price">1 399 kr</p>
+                    </div>
+                    <p class="item-category">Men's Shoes</p>
+                    <p class="item-color">White/White</p>
+                    
+                    <div class="item-options">
+                        <div class="option">
+                            <label>Size</label>
+                            <select id="checkSize">
+                                <option>EU 40</option>
+                                <option>EU 41</option>
+                                <option>EU 42</option>
+                                <option>EU 43</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Quantity</label>
+                            <select id="checkQty">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item-actions">
+                        <button class="action-btn">♡</button>
+                        <button class="action-btn remove-btn">🗑️</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="emptyCartMsg" class="hidden" style="padding: 40px 0;">
+                <p>There are no items in your bag.</p>
+            </div>
+        </div>
+
+        <div class="summary-section">
+            <h2>Summary</h2>
+            
+            <div class="summary-row">
+                <p>Subtotal <span class="tooltip">?</span></p>
+                <p id="subtotalPrice">1 399 kr</p>
+            </div>
+            <div class="summary-row">
+                <p>Estimated Delivery & Handling</p>
+                <p>Free</p>
+            </div>
+            
+            <hr class="summary-divider">
+            
+            <div class="summary-row total-row">
+                <p>Total</p>
+                <p id="totalPrice">1 399 kr</p>
+            </div>
+
+            <hr class="summary-divider">
+
+            <button class="checkout-btn primary-btn">Guest Checkout</button>
+            <button class="checkout-btn member-btn">Member Checkout</button>
+        </div>
+
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

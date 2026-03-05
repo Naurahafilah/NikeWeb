@@ -1,0 +1,73 @@
+/* NAVBAR CHECKOUT */
+.checkout-nav {
+    justify-content: space-between;
+    padding: 0 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.secure-checkout { font-weight: 500; font-size: 14px; color: #111; }
+
+/* TATA LETAK UTAMA */
+.bag-layout {
+    display: flex; gap: 60px; padding: 40px 60px; max-width: 1100px; margin: 0 auto;
+}
+
+/* KOLOM KIRI (Daftar Barang) */
+.bag-items-section { flex: 2; }
+
+.free-shipping-banner {
+    background: #f5f5f5; padding: 16px; margin-bottom: 24px;
+}
+.free-shipping-banner h3 { font-size: 16px; font-weight: 500; margin-bottom: 4px; color: #9e3500; }
+.free-shipping-banner p { font-size: 14px; }
+.free-shipping-banner a { text-decoration: underline; font-weight: 500; }
+
+.bag-items-section h1 { font-size: 28px; font-weight: 500; margin-bottom: 24px; }
+
+/* KARTU BARANG DI KERANJANG */
+.cart-item {
+    display: flex; gap: 24px; padding-bottom: 30px; border-bottom: 1px solid #e5e5e5; margin-bottom: 30px;
+}
+.item-img {
+    width: 150px; height: 150px; background: #f5f5f5; display: flex; align-items: center; justify-content: center;
+}
+.item-img img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+
+.item-details { flex: 1; }
+.item-header { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.item-header h3 { font-size: 16px; font-weight: 500; color: #111; }
+.item-price { font-size: 16px; font-weight: 500; color: #111; }
+
+.item-category, .item-color { font-size: 15px; color: #757575; margin-bottom: 4px; }
+
+.item-options { display: flex; gap: 20px; margin-top: 12px; margin-bottom: 20px; }
+.option { display: flex; gap: 8px; align-items: center; font-size: 15px; color: #757575; }
+.option select {
+    border: none; background: transparent; font-size: 15px; font-weight: 500; color: #111; cursor: pointer; outline: none;
+}
+
+.item-actions { display: flex; gap: 16px; }
+.action-btn { background: none; border: none; font-size: 18px; cursor: pointer; color: #757575; }
+.action-btn:hover { color: #111; }
+
+/* KOLOM KANAN (Order Summary) */
+.summary-section { flex: 1; }
+.summary-section h2 { font-size: 24px; font-weight: 500; margin-bottom: 24px; }
+
+.summary-row { display: flex; justify-content: space-between; font-size: 16px; margin-bottom: 16px; }
+.summary-row p { color: #111; }
+.tooltip { display: inline-block; width: 16px; height: 16px; border-radius: 50%; border: 1px solid #757575; text-align: center; font-size: 10px; line-height: 14px; color: #757575; cursor: pointer; margin-left: 4px;}
+
+.summary-divider { border: none; border-top: 1px solid #e5e5e5; margin: 20px 0; }
+
+.total-row { font-weight: 500; font-size: 18px; }
+
+/* TOMBOL CHECKOUT */
+.checkout-btn {
+    width: 100%; padding: 18px; border-radius: 30px; font-size: 16px; font-weight: 500; cursor: pointer; margin-bottom: 12px; transition: 0.3s;
+}
+.primary-btn { background: #111; color: white; border: none; }
+.primary-btn:hover { background: #333; }
+.member-btn { background: white; color: #111; border: 1px solid #e5e5e5; }
+.member-btn:hover { border-color: #111; }
+
+.hidden { display: none; }
